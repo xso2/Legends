@@ -7,10 +7,11 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.string :email,                null: false, default: ""
       t.string :encrypted_password,   null: false, default: ""
       t.string :name,                 null: false
+      t.text   :profile              
       t.integer :age,                 null: false
-      t.decimal :height,              null: false, precision: 5, scale: 2
-      t.decimal :weight,              null: false, precision: 5, scale: 2
-      t.decimal :body_fat_percentage, precision: 5, scale: 2
+      t.decimal :height,              null: false, precision: 4, scale: 1
+      t.decimal :weight,              null: false, precision: 4, scale: 1
+      t.decimal :body_fat_percentage, precision: 3, scale: 1
 
       ## Recoverable
       t.string   :reset_password_token

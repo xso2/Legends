@@ -16,10 +16,11 @@ ActiveRecord::Schema.define(version: 2022_02_27_031924) do
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "name", null: false
+    t.text "profile"
     t.integer "age", null: false
-    t.decimal "height", precision: 5, scale: 2, null: false
-    t.decimal "weight", precision: 5, scale: 2, null: false
-    t.decimal "body_fat_percentage", precision: 5, scale: 2
+    t.decimal "height", precision: 4, scale: 1, null: false
+    t.decimal "weight", precision: 4, scale: 1, null: false
+    t.decimal "body_fat_percentage", precision: 3, scale: 1
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
