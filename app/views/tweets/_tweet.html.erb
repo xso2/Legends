@@ -1,0 +1,8 @@
+<div class="tweet-image">
+  <%= image_tag tweet.image, class: "tweet-img"  %>
+</div>
+<div class="tweet__body">
+    <%= link_to tweet[:text], tweet_path(tweet.id), class: :tweet__title %>
+    <%= link_to "by #{tweet.user.name}", user_path(tweet.user), class: :tweet__user 
+  </div>
+</div>
