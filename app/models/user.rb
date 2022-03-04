@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   has_many :tweets
   has_many :comments
+  has_many :meal_records
 
   validates :name, presence: true
   validates :age , presence: true

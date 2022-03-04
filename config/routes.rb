@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  get 'comments/create'
-  get 'comments/destroy'
+  resources :meetings
   devise_for :users
   root to: 'tweets#index'
 
@@ -12,4 +11,7 @@ Rails.application.routes.draw do
     resources :comments, only: [:create, :destroy]
   end
   resources :users, only: :show
+
+  resources :meal_records
+  resources :body_makes
 end
