@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :meetings
   devise_for :users
   root to: 'tweets#index'
 
@@ -12,4 +13,5 @@ Rails.application.routes.draw do
   resources :users, only: :show
 
   resources :meal_records
+  resources :body_makes
 end

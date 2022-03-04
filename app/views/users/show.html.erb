@@ -1,10 +1,7 @@
-<div class="contents">
-<% @tweets.each do |tweet| %>
-  <%= tweet.user.name %>
-  <%= tweet.text %>
-  <%= link_to tweet_path(tweet.id) do %>
-  <div class='tweet-img-content'>
-  <%= image_tag tweet.image, class: "tweet-img" %>
-    <% end %>
-  <%end%>
-</div>
+<%= render partial:"meal_records/meal_record", locals: { meal_record: @meal_record } %>
+
+<%= render partial:"body_makes/body_make", locals: { body_make: @body_make } %>
+
+<%= month_calendar do |date| %>
+  <%= date %>
+<% end %>

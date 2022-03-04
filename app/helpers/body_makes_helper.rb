@@ -1,0 +1,2 @@
+module BodyMakesHelper
+end
