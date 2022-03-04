@@ -16,7 +16,7 @@ class BodyMakesController < ApplicationController
   def create
     @body_make = BodyMake.new(body_make_params)
     if @body_make.save
-      redirect_to user_path
+      redirect_to root_path
     else
       render :new
     end
@@ -35,7 +35,7 @@ class BodyMakesController < ApplicationController
   private
 
   def body_make_params
-    params.require(:body_make).permit(:text, :calorie, :image).merge(user_id: current_user.id )
+    params.require(:body_make).permit(:text, :weight, :image).merge(user_id: current_user.id )
   end
 
   def set_body_make

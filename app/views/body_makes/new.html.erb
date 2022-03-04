@@ -1,2 +1,5 @@
-<h1>BodyMakes#new</h1>
-<p>Find me in app/views/body_makes/new.html.erb</p>
+<div class="contents row">
+  <div class="container">
+    <h3>投稿する</h3>
+    <%= render partial: "body_makes/form", locals: { body_make: @body_make } %>  
+  </div>
