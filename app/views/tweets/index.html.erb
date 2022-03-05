@@ -1,11 +1,10 @@
-
 <div class="contents">
-<% @tweets.each do |tweet| %>
-  <%= tweet.user.name %>
-  <%= tweet.text %>
-  <%= link_to tweet_path(tweet.id) do %>
-  <div class='tweet-img-content'>
-  <%= image_tag tweet.image, class: "tweet-img" %>
+    <% @tweets.each do |tweet| %>
+    <%= tweet.user.name %>
+    <%= tweet.text %>
+    <%= link_to tweet_path(tweet.id) do %>
+    <div class='tweet-img-content'>
+    <%= image_tag tweet.image.variant(resize:'300x200'), class: "tweet-img" %>
     <% end %>
-  <%end%>
+    <%end%>
 </div>

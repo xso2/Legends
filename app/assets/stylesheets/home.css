@@ -1,17 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
 p{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
-
 }
 
 /*========= body背景色の変化CSS ===============*/
 
-body {
+html, body {
 width: 100%;
 height: 100%;
-background:linear-gradient(45deg, #1c1d1d,#223f45,#093145);/*グラデーションを定義*/
+background:linear-gradient(45deg, #2e2e2e,#284b4f,#04879f);/*グラデーションを定義*/
 background-size: 200% 200%;/*サイズを大きくひきのばす*/
 animation: bggradient 20s ease infinite;
 }
