@@ -1,9 +1,47 @@
 form {
-  background-color: #eee;
   margin-top: 200px;
-  opacity: 0.8;
+  display: inline-block;
+  border: #fff 1px solid;
+  border-radius: 10px;
 }
 
-.field {
-  background-color: #eee;
+
+.form-text {
+  color: #eee;
+  border-radius: 10px;
 }
+
+
+
+/* ボタン関連 */
+.button-gradation {
+  position: relative;
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #00b5ad;
+  text-decoration: none;
+  user-select: none;
+  background: #fff;
+  transition: 0.5s;
+  border-radius: 50%;
+  border: rgb(62, 68, 70);
+}
+
+.button-gradation:hover {
+  color: rgb(55, 52, 52);
+  background: -webkit-linear-gradient(top left, #03bee8, #0ce6d7);
+  
+}
+
+.button-gradation::before {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  content: "";
+  background: -webkit-linear-gradient(top left, #00b5ad, #50e684);
+}
+/* ボタン関連終わり */

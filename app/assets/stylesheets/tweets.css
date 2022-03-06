@@ -1,0 +1,23 @@
+.contents {
+  display: inline-block;
+}
+
+.tweet-img-content {
+  justify-content: center;
+  border: 1px solid rgb(150, 148, 148);
+  width: 500px;
+  height: 200px;
+  flex-direction: column;
+}
+
+.tweet-form {
+  position: absolute;
+  margin: 100px 0 0 30px;
+}
+
+.tweet-img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+
+}
