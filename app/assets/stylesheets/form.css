@@ -1,14 +1,18 @@
 form {
-  margin-top: 200px;
   display: inline-block;
   border: #fff 1px solid;
   border-radius: 10px;
+  top: 100px;
+  left: 20px;
+  position: fixed;
+  width: 400px;
 }
 
 
 .form-text {
   color: #eee;
   border-radius: 10px;
+  width: 300px;
 }
 
 
