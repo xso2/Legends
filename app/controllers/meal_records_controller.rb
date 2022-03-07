@@ -24,7 +24,6 @@ class MealRecordsController < ApplicationController
 
   def show
     @meal_record = MealRecord.find(params[:id])
-
   end
 
   def destroy
