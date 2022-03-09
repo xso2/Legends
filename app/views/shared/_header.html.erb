@@ -8,7 +8,7 @@
     <nav class="header-nav">
       <ul class="header-nav-list"> 
         <% if user_signed_in? %>
-        <li class="header-nav-item"><%= link_to "ツイート", new_tweet_path %></li>
+        <li class="header-nav-item"><%= link_to "ツイート", tweets_path %></li>
         <li class="header-nav-item"><%= link_to "ボディメイク",  new_body_make_path %></li>
         <li class="header-nav-item"><%= link_to "食事記録", new_meal_record_path %></li>
         <li class="header-nav-item"><%= link_to "#{current_user.name}", user_path(current_user.id) %></li>
