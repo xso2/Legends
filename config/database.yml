@@ -46,10 +46,13 @@ test:
 #
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
-
+#
 production:
   <<: *default
   database: Legends_production
+  username: Legends
+  password: <%= ENV['LEGENDS_DATABASE_PASSWORD'] %>
+
   username: root
   password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock

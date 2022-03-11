@@ -1,11 +1,9 @@
 * {
   box-sizing: border-box;
   text-align: center;
-  opacity: 1;
 }
 
-
-  p{ 
+p{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -14,31 +12,32 @@
 
 /* ========= body背景色の変化CSS =============== */
 
-.bg_test {
+/* .bg_test {
   background-image: url(ca4982ac-s.png), url(t02200299_0472064210643240162.png);
   background-size: contain;
   background-position: left, right;
   height: 100%;
   background-repeat: no-repeat;
-  }
+  } */
 
-html, body {
-  width: 100%;
-  height: 100%;
-  background:linear-gradient(45deg, #726b19,#1d1d1d,#6a5a18);/*グラデーションを定義*/
-  background-size: 200% 200%;/*サイズを大きくひきのばす*/
-  animation: bggradient 20s ease infinite;
-} 
+/*========= body背景色の変化CSS ===============*/
+
+/* html, body {
+width: 100%;
+height: 100%;
+background:linear-gradient(45deg, #726b19,#1d1d1d,#6a5a18);/*グラデーションを定義*/
+/* background-size: 200% 200%;サイズを大きくひきのばす */
+/* animation: bggradient 20s ease infinite;
+}
 
 @keyframes bggradient{
-  0% {
-  background-position: 0% 50%;
-  }
-  50% {
-  background-position: 100% 50%;
-  }
-  100% {
-  background-position: 0% 50%;
-  }
-  }   
-
+0% {
+background-position: 0% 50%;
+}
+50% {
+background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
+}  */

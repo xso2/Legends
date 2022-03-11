@@ -28,7 +28,7 @@ form {
   user-select: none;
   background: #fff;
   transition: 0.5s;
-  border-radius: 20px;
+  border-radius: 50%;
   border: rgb(62, 68, 70);
 }
 
