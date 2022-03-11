@@ -4,17 +4,13 @@
   opacity: 1;
 }
 
-<<<<<<< Updated upstream
 
   p{ 
-=======
-/* p{
->>>>>>> Stashed changes
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
-} */
+}
 
 /* ========= body背景色の変化CSS =============== */
 
@@ -35,7 +31,6 @@ html, body {
 } 
 
 @keyframes bggradient{
-<<<<<<< Updated upstream
   0% {
   background-position: 0% 50%;
   }
@@ -47,19 +42,3 @@ html, body {
   }
   }   
 
-=======
-0% {
-background-position: 0% 50%;
-}
-50% {
-background-position: 100% 50%;
-}
-100% {
-background-position: 0% 50%;
-}
-}  */
-
-html, body {
-  background-color: #bfbfbe;
-}
->>>>>>> Stashed changes

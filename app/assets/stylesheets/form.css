@@ -1,21 +1,18 @@
 form {
   display: inline-block;
   border: #fff 1px solid;
+  border-radius: 10px;
   top: 100px;
   left: 20px;
   position: fixed;
   width: 400px;
-  box-shadow: 10px 10px 10px grey;
-  background-color: #eee;
 }
 
 
 .form-text {
+  color: #eee;
   border-radius: 10px;
   width: 300px;
-  max-width: 300px;
-  max-height: 500px;
-  min-height: auto;
 }
 
 
@@ -26,10 +23,10 @@ form {
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #f5c500;
+  color: #00b5ad;
   text-decoration: none;
   user-select: none;
-  background: #bfbfbe;
+  background: #fff;
   transition: 0.5s;
   border-radius: 20px;
   border: rgb(62, 68, 70);
