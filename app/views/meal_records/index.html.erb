@@ -7,4 +7,5 @@
   <%= image_tag meal_record.image, class: "meal_record-img" %>
     <% end %>
   <%end%>
+  <%= render partial: "form", locals: { meal_record: @meal_record }, class:"meal_record-form" %> 
 </div>

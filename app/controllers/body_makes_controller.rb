@@ -5,8 +5,7 @@ class BodyMakesController < ApplicationController
 
 
   def index
-    @body_makes = BodyMakes.includes(:user).order("created_at DESC")
-    body_make = BodyMake.find(params[:id])
+    @body_makes = BodyMake.includes(:user).order("created_at DESC")
   end
 
   def new

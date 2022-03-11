@@ -1,24 +1,23 @@
 <form>
 <%= form_with model: @body_make, local: true do |f|%>
-  <%= render 'shared/error_messages', model: f.object %>
 
   <div class="field">
     <%= f.label :weight, "体重" %><br />
-    <%= f.text_field :weight, id:"body_make-text" %>
+    <%= f.text_field :weight, class:"form-text" %>
   </div>
 
     <div class="field">
     <%= f.label :text, "メモ" %><br />
-    <%= f.text_area :text, id:"body_make-text" %>
+    <%= f.text_area :text, class:"form-text" %>
   </div>
 
   <div class="field">
     <%= f.label :image, "画像" %><br />
-    <%= f.file_field :image, id:"body_make_image" %>
+    <%= f.file_field :image, class:"form_image" %>
   </div>
 
   <div class="actions">
-    <%= f.submit "保存する", class: :form__btn  %>
+    <%= f.submit "保存する", class: "button-gradation"  %>
   </div>
 <% end %>
 </form>

@@ -59,8 +59,6 @@ gem 'pry-rails'
 
 gem 'simple_calendar', '~> 2.0'
 
-gem "bulma-rails", "~> 0.9.3"
-
 gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'jquery-rails'

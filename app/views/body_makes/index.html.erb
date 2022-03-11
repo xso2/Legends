@@ -1,2 +1,11 @@
-<h1>BodyMakes#index</h1>
-<p>Find me in app/views/body_makes/index.html.erb</p>
+<div class="contents">
+<% @body_makes.each do |body_make| %>
+  <%= body_make.user.name %>
+  <%= body_make.text %>
+  <%= link_to body_make_path(body_make.id) do %>
+  <div class='body_make-img-content'>
+  <%= image_tag body_make.image, class: "body_make-img" %>
+    <% end %>
+  <%end%>
+  <%= render partial: "form", locals: { body_make: @body_make }, class:"body_make-form" %> 
+</div>

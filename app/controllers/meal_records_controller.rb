@@ -5,8 +5,7 @@ class MealRecordsController < ApplicationController
 
 
   def index
-    @meal_records = MealRecords.includes(:user).order("created_at DESC")
-    meal_record = MealRecord.find(params[:id])
+    @meal_records = MealRecord.includes(:user).order("created_at DESC")
   end
 
   def new
