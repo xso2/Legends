@@ -13,9 +13,6 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "bulma";
 @import "reset.css";
 @import "home.css";
 @import "header.css";
@@ -24,3 +21,4 @@
 @import "tweets.css";
 @import "simple_calendar";
 @import "form.css";
+@import "scaffolds.scss";

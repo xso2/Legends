@@ -3,7 +3,8 @@
 }
 
 .tweet-img-content {
-  justify-content: center;
+  position: relative;
+  display: inline-block;
   border: 1px solid rgb(150, 148, 148);
   width: 800px;
   height: 200px;
@@ -13,12 +14,15 @@
   margin-top: 70px;
 }
 
+.tweet-img-content a {
+  justify-content: left;
+}
 
 .tweet-img {
   right: 50px;
   height: 150px;
   width: 150px;
   object-fit: cover;
-  opacity: 0.8;
   border-radius: 50%;
+  text-align: right;
 }
