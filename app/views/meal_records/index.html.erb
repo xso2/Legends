@@ -1,10 +1,13 @@
 <div class="contents">
-<% @meal_records.each do |meal_record| %>
-  <%= meal_record.user.name %>
-  <%= meal_record.text %>
-  <%= link_to meal_record_path(meal_record.id) do %>
+  <div class="meal_record">
+    <% @meal_records.each do |meal_record| %>
+    <%= link_to meal_record_path(meal_record.id) do %>
   <div class='meal_record-img-content'>
-  <%= image_tag meal_record.image, class: "meal_record-img" %>
+    <%= meal_record.text %>
+    <%= image_tag meal_record, class: "meal_record-img" %>
+    <%= meal_record.user.name %>
     <% end %>
-  <%end%>
+    <%end%>
+  </div>
+  <%= render partial: "form", locals: { meal_record: @meal_record }, class:"meal_record-form" %> 
 </div>
